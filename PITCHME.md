@@ -20,6 +20,8 @@
 - 今日のポイント
 - TypeScriptのテスト環境
 - 基本型と演算子
+  - 特殊な型
+- なぜTypeScriptか？
 - クイックTDD
 - まとめ
 
@@ -43,7 +45,7 @@
 
 ## 基本型と演算子
 
-数値(`number`)型。整数も小数も表す。四則演算子が使える。
+数値(`number`)型。整数も小数も表す。四則演算子が使える。
 
 ```javascript
 > 1234
@@ -75,6 +77,71 @@
 > `変数strの${str}`
 '変数strの中身'
 ```
+
+---
+
+## 基本型と演算子
+
+文字列はいくつかの便利なメソッド(自身が持っている関数)を持っています。
+
+```javascript
+> 'abcdef'.length
+6
+> 'abcdef'.substr(1, 3) // 部分文字列
+'bcd'
+> 'I love cat.'.replace('cat', 'dog')
+'I love dog.'
+```
+
+---
+
+## 基本型と演算子
+
+真偽値(`bool`)型。論理型とも呼ばれる。論理演算子(&&, ||, !)を用いて扱う。
+
+```javascript
+> true
+true
+> false
+false
+> true && false // AかつB
+false
+> true || false // AもしくはB
+true
+> !true // 否定
+false
+```
+
+---
+
+## 基本型と演算子
+
+比較演算子を使うことで、bool型を返す。
+
+```javascript
+> 1 < 2 // 1は2より小さい
+true
+> 3 <= 3 // 3は3以上
+true
+> 'abc' === 'abc' 
+true
+> 'cat' !== 'dog'
+true
+> 1 == '1' // 型を考慮しない比較
+true
+> 1 === '1' // 型を考慮した比較
+false
+```
+
+---
+
+## 特殊な型
+
+undefinedとnullの話
+
+---
+
+## なぜTypeScriptか？
 
 ---
 
