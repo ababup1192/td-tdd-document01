@@ -177,3 +177,11 @@ false
 - テストは「関数」対象に振る舞いを確認する
 - TypeScriptは「型」と言う制約を設けることで間違いを減らし開発を円滑にする
 - 基本型は演算子を用いることで演算することが可能
+
+---
+
+## 参考文献
+
+- [TypeScript (Basic Types)](https://www.typescriptlang.org/docs/handbook/basic-types.html)
+- [MDN 標準ビルトインオブジェクト](https://developer.mozilla.org/ja/docs/Web/JavaScript/Reference/Global_Objects)
+- [JestJS](https://jestjs.io)
