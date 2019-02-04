@@ -137,11 +137,23 @@ false
 
 ## 特殊な型
 
-undefinedとnullの話
+- undefined 
+    - まだ値が代入されていない変数は undefined
+    - 評価しようとしている変数に値が代入されていない場合、メソッドや文も undefined を返す
+    - 値を return しない関数も undefined を返す
+- void
+    - 値を返さない関数の戻り型を表す
+- any
+    - どんな型でも当てはまる型を表す
 
 ---
 
 ## なぜTypeScriptか？
+
+型が一致しているかどうかを検知するには、テストよりもコンパイラ(TypeScript)に任せるほうがフィードバックが早く得られ、安全である。
+
+![](image/type_error01.png)
+![](image/type_error02.png)
 
 ---
 
